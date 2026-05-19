@@ -6,6 +6,12 @@
         </div>
     </header>
 
+    <form wire:submit="$refresh">
+        <span class="mr-2">Your name: </span>
+        <input type="text" wire:model.live.debounce.500ms="name">
+        <button>Update</button>
+    </form>
+
     <ul class="list">
         @foreach($books as $book)
             <li wire:key="{{ $book->id }}">
