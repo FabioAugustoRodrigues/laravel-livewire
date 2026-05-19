@@ -20,7 +20,7 @@
                     Book List
                 </a>
                 <a
-                    @class(['active' => request()->is('/create')])
+                    @class(['active' => request()->is('create')])
                     href="/create">
                     Add a book
                 </a>
