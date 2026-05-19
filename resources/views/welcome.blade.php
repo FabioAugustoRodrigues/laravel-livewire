@@ -5,10 +5,16 @@
   <title>Livewire Crash Course</title>
   
   @vite('resources/css/app.css')
+
+  @livewireStyles
 </head>
 <body>
   <main>
     <h2>Welcome to the Livewire Crash Course!</h2>
+
+    <livewire:book-list />
+
+    @livewireScripts
   </main>
 </body>
 </html>
